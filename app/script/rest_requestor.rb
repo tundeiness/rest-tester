@@ -1,7 +1,7 @@
 require 'rest-client'
-#url = "http://localhost:3000"
+url = "http://localhost:3000"
 
-puts "Please enter url:> "
-search = gets.chomp
+#puts "Please enter url:> "
+#search = gets.chomp
 
-puts RestClient.get(search)
+puts RestClient.get(url)
