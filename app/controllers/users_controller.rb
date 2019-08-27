@@ -5,15 +5,15 @@ class UsersController < ApplicationController
   end
 
   def show
-   # @name = name.find(params[:id])
-    @name = "I am the Show action!"
+    @user = User.find(params[:id])
+    #@name = "I am the Show action!"
   end
-  
+
   def new
-    @name = "I am the New action!"
+    @user = Users.new
   end
 
   def edit
     @name = "I am the Edit action!"
-  end  
+  end
 end
